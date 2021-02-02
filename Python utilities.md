@@ -1,5 +1,20 @@
 # Python utilities
 
+### Imports
+```python
+import pandas as pd
+import numpy as np
+```
+### Change display number of rows or columns:
+```python
+pd.set_option('display.max_rows', 1000)
+pd.set_option('display.max_columns', 1000)
+```
+### to remove SettingWithCopyWarning:
+```python
+pd.set_option('mode.chained_assignment', None)
+```
+
 ### To remove possible whitespaces (tabs) on the dataframe:
 ```python
 df = df.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
@@ -13,22 +28,12 @@ print(cols)
 cols = list(bbtools.columns)
 print('", "'.join(cols))
 ```
-
 ### Statistics
 ```python
 statistics = df.describe().loc[["mean", "std", "min", "25%", "50%", "75%", "max"]].round(2)
 ```
 * * *
-## Jupyter
-### Change display number of rows or columns:
-```python
-pd.set_option('display.max_rows', 1000)
-pd.set_option('display.max_columns', 1000)
-```
-### to remove SettingWithCopyWarning:
-```python
-pd.set_option('mode.chained_assignment', None)
-```
+
 * * *
 ## Scripts
 ### Script with pass arguments
