@@ -6,7 +6,7 @@ Some useful code for several programming languages, tools, etc.
 [Bash](https://github.com/sandragodinhosilva/usefull_code/blob/main/bash.txt)
 
 ### Programming languages
-[Python](https://github.com/sandragodinhosilva/usefull_code/blob/main/python.md)
+[Python](https://github.com/sandragodinhosilva/usefull_code/blob/main/python.md) \
 [R](https://github.com/sandragodinhosilva/usefull_code/blob/main/R%20utilities.md)
 
 ### Tools
