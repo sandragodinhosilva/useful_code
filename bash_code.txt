@@ -1,3 +1,0 @@
-git config alias.acp '! acp() { git add . && git commit -a -m "$1" && git push ; } ; acp'
-
-while read -r file; do find -name "$file".gbk | xargs cp -t  input_bigscape/ ; done < BGCs_GCFs_wt_flexi.txt
