@@ -16,47 +16,8 @@ tar -zcvf [result-filename.tar.gz] [path-of-directory-to-compress]
 tar -zxvf filename.tar.gz
 
 ##############################################################################
-# SHORTCUTS and HISTORY
+# HISTORY
 ##############################################################################
-
-CTRL+A  # move to beginning of line
-CTRL+B  # moves backward one character
-CTRL+C  # halts the current command
-CTRL+D  # deletes one character backward or logs out of current session, similar to exit
-CTRL+E  # moves to end of line
-CTRL+F  # moves forward one character
-CTRL+G  # aborts the current editing command and ring the terminal bell
-CTRL+H  # deletes one character under cursor (same as DELETE)
-CTRL+J  # same as RETURN
-CTRL+K  # deletes (kill) forward to end of line
-CTRL+L  # clears screen and redisplay the line
-CTRL+M  # same as RETURN
-CTRL+N  # next line in command history
-CTRL+O  # same as RETURN, then displays next line in history file
-CTRL+P  # previous line in command history
-CTRL+R  # searches backward
-CTRL+S  # searches forward
-CTRL+T  # transposes two characters
-CTRL+U  # kills backward from point to the beginning of line
-CTRL+V  # makes the next character typed verbatim
-CTRL+W  # kills the word behind the cursor
-CTRL+X  # lists the possible filename completions of the current word
-CTRL+Y  # retrieves (yank) last item killed
-CTRL+Z  # stops the current command, resume with fg in the foreground or bg in the background
-
-ALT+B   # moves backward one word
-ALT+D   # deletes next word
-ALT+F   # moves forward one word
-ALT+H   # deletes one character backward
-ALT+T   # transposes two words
-ALT+.   # pastes last word from the last command. Pressing it repeatedly traverses through command history.
-ALT+U   # capitalizes every character from the current cursor position to the end of the word
-ALT+L   # uncapitalizes every character from the current cursor position to the end of the word
-ALT+C   # capitalizes the letter under the cursor. The cursor then moves to the end of the word.
-ALT+R   # reverts any changes to a command you’ve pulled from your history if you’ve edited it.
-
-BACKSPACE  # deletes one character backward
-DELETE     # deletes one character under cursor
 
 history   # shows command line history
 !!        # repeats the last command
@@ -69,7 +30,6 @@ exit      # logs out of current session
 ##############################################################################
 # BASH BASICS
 ##############################################################################
-
 env                 # displays all environment variables
 
 echo $SHELL         # displays the shell you're using
@@ -85,8 +45,6 @@ clear               # clears content on window (hide displayed lines)
 ##############################################################################
 # FILE COMMANDS
 ##############################################################################
-
-
 ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
 ls -l                         # lists your files in 'long format', which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified
 ls -a                         # lists all files in 'long format', including hidden files (name beginning with '.')
@@ -124,8 +82,6 @@ head -y lines.txt | tail +x   # want to display all the lines from x to y. This 
 ##############################################################################
 # DIRECTORY COMMANDS
 ##############################################################################
-
-
 mkdir <dirname>               # makes a new directory
 rmdir <dirname>               # remove an empty directory
 rmdir -rf <dirname>           # remove a non-empty directory
@@ -140,8 +96,6 @@ cd ~                          # changes to home.
 ##############################################################################
 # SSH, SYSTEM INFO & NETWORK COMMANDS
 ##############################################################################
-
-
 ssh user@host            # connects to host as user
 ssh -p <port> user@host  # connects to host on specified port as user
 ssh-copy-id user@host    # adds your ssh key to host for user to enable a keyed or passwordless login
@@ -174,12 +128,9 @@ dig <domain>             # gets DNS information for domain
 dig -x <host>            # reverses lookup host
 wget <file>              # downloads file
 
-
 ##############################################################################
 # VARIABLES
 ##############################################################################
-
-
 varname=value                # defines a variable
 varname=value command        # defines a variable to be in the environment of a particular subprocess
 echo $varname                # checks a variable's value
@@ -234,11 +185,8 @@ $(UNIX command)              # command substitution: runs the command and return
 ##############################################################################
 # FUNCTIONS
 ##############################################################################
-
-
 # The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
 # $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
-
 
 function functname() {
   shell commands
@@ -251,8 +199,6 @@ declare -f          # displays all defined functions in your login session
 ##############################################################################
 # FLOW CONTROLS
 ##############################################################################
-
-
 statement1 && statement2  # and operator
 statement1 || statement2  # or operator
 
@@ -287,7 +233,6 @@ file1 -nt file2           # file1 is newer than file2
 file1 -ot file2           # file1 is older than file2
 
 # NUMBERS
-
 -lt                       # less than
 -le                       # less than or equal
 -eq                       # equal
@@ -342,8 +287,6 @@ done
 ##############################################################################
 # COMMAND-LINE PROCESSING CYCLE
 ##############################################################################
-
-
 # The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
 # There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
 
@@ -357,8 +300,6 @@ eval     # takes arguments and run them through the command-line processing step
 ##############################################################################
 # INPUT/OUTPUT REDIRECTORS
 ##############################################################################
-
-
 cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
 < file     # takes standard input from file
 > file     # directs standard output to file
@@ -384,8 +325,6 @@ n<&-       # closes the input from file descripor n
 ##############################################################################
 # PROCESS HANDLING
 ##############################################################################
-
-
 # To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
 # This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
 # Of course, to interrupt a job, type CTRL+C.
@@ -422,8 +361,6 @@ wait                # waits until all background jobs have finished
 ##############################################################################
 # TIPS & TRICKS
 ##############################################################################
-
-
 # set an alias
 cd; nano .bash_profile
 > alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add your alias in .bash_profile
@@ -440,8 +377,6 @@ cd $websites
 ##############################################################################
 # DEBUGGING SHELL PROGRAMS
 ##############################################################################
-
-
 bash -n scriptname  # don't run commands; check for syntax errors only
 set -o noexec       # alternative (set option in script)
 
@@ -475,9 +410,51 @@ function returntrap {
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 
 ##############################################################################
+# SHORTCUTS 
+##############################################################################
+CTRL+A  # move to beginning of line
+CTRL+B  # moves backward one character
+CTRL+C  # halts the current command
+CTRL+D  # deletes one character backward or logs out of current session, similar to exit
+CTRL+E  # moves to end of line
+CTRL+F  # moves forward one character
+CTRL+G  # aborts the current editing command and ring the terminal bell
+CTRL+H  # deletes one character under cursor (same as DELETE)
+CTRL+J  # same as RETURN
+CTRL+K  # deletes (kill) forward to end of line
+CTRL+L  # clears screen and redisplay the line
+CTRL+M  # same as RETURN
+CTRL+N  # next line in command history
+CTRL+O  # same as RETURN, then displays next line in history file
+CTRL+P  # previous line in command history
+CTRL+R  # searches backward
+CTRL+S  # searches forward
+CTRL+T  # transposes two characters
+CTRL+U  # kills backward from point to the beginning of line
+CTRL+V  # makes the next character typed verbatim
+CTRL+W  # kills the word behind the cursor
+CTRL+X  # lists the possible filename completions of the current word
+CTRL+Y  # retrieves (yank) last item killed
+CTRL+Z  # stops the current command, resume with fg in the foreground or bg in the background
+
+ALT+B   # moves backward one word
+ALT+D   # deletes next word
+ALT+F   # moves forward one word
+ALT+H   # deletes one character backward
+ALT+T   # transposes two words
+ALT+.   # pastes last word from the last command. Pressing it repeatedly traverses through command history.
+ALT+U   # capitalizes every character from the current cursor position to the end of the word
+ALT+L   # uncapitalizes every character from the current cursor position to the end of the word
+ALT+C   # capitalizes the letter under the cursor. The cursor then moves to the end of the word.
+ALT+R   # reverts any changes to a command you’ve pulled from your history if you’ve edited it.
+
+BACKSPACE  # deletes one character backward
+DELETE     # deletes one character under cursor
+
+
+##############################################################################
 # COLORS AND BACKGROUNDS 
 ##############################################################################
-
 # Reset
 Color_Off='\033[0m' # Text Reset
 
@@ -500,7 +477,6 @@ LYellow='\033[0;93m'# Ligth Yellow
 LBlue='\033[0;94m'  # Ligth Blue
 LPurple='\033[0;95m'# Light Purple
 LCyan='\033[0;96m'  # Ligth Cyan
-
 
 # Bold
 BBlack='\033[1;30m' # Black
