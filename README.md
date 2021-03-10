@@ -1,16 +1,16 @@
-# usefull_code
+# Useful code
 
-Usefull code.
+Some useful code for several programming languages, tools, etc.
 
-## Command line
+### Command line
 [Bash](https://github.com/sandragodinhosilva/usefull_code/blob/main/bash.txt)
 
-## Programming languages
+### Programming languages
 [Python](https://github.com/sandragodinhosilva/usefull_code/blob/main/python.md)
 [R](https://github.com/sandragodinhosilva/usefull_code/blob/main/R%20utilities.md)
 
-## Tools
+### Tools
 [Jupyter Notebooks]()
 
-## Miscelaneous
+### Miscelaneous
 [Miscelaneous](https://github.com/sandragodinhosilva/usefull_code/blob/main/miscleaneous.md)
