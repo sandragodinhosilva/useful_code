@@ -10,7 +10,7 @@ Some useful code for several programming languages, tools, etc.
 [R](https://github.com/sandragodinhosilva/usefull_code/blob/main/R%20utilities.md)
 
 ### Tools
-[Jupyter Notebooks]()
+[Jupyter Notebooks]() \
 [Weka - basic commands](https://github.com/sandragodinhosilva/usefull_code/blob/main/Weka.md)
 
 ### Git
