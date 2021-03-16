@@ -12,5 +12,8 @@ Some useful code for several programming languages, tools, etc.
 ### Tools
 [Jupyter Notebooks]()
 
+### Git
+[Revert commit](https://github.com/sandragodinhosilva/usefull_code/blob/main/git_revert.md)
+
 ### Miscelaneous
 [Miscelaneous](https://github.com/sandragodinhosilva/usefull_code/blob/main/miscleaneous.md)
