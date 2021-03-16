@@ -16,5 +16,8 @@ Some useful code for several programming languages, tools, etc.
 ### Git
 [Revert commit](https://github.com/sandragodinhosilva/usefull_code/blob/main/git_revert.md)
 
+### Bioinformatics-related
+[SRA - download files](https://github.com/sandragodinhosilva/useful_code/tree/main/bioinformatics/fastq-dump.md)
+
 ### Miscelaneous
 [Miscelaneous](https://github.com/sandragodinhosilva/usefull_code/blob/main/miscleaneous.md)
