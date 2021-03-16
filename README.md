@@ -11,6 +11,7 @@ Some useful code for several programming languages, tools, etc.
 
 ### Tools
 [Jupyter Notebooks]()
+[Weka - basic commands](https://github.com/sandragodinhosilva/usefull_code/blob/main/Weka.md)
 
 ### Git
 [Revert commit](https://github.com/sandragodinhosilva/usefull_code/blob/main/git_revert.md)
