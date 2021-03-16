@@ -27,3 +27,6 @@ The following method will undo the commit and revert all changes so that your st
 ```
 git reset --hard HEAD~
 ```
+
+**Note: In case you just want to rewrite the commit message, you could use git –amend instead.**
+
