@@ -14,8 +14,11 @@ Some useful code for several programming languages, tools, etc.
 [Weka - basic commands](https://github.com/sandragodinhosilva/usefull_code/blob/main/Weka.md)
 
 ### Git
-[gitignore template)](https://github.com/sandragodinhosilva/usefull_code/blob/main/.gitignore)
+[Gitignore template](https://github.com/sandragodinhosilva/usefull_code/blob/main/.gitignore) \
 [Revert commit](https://github.com/sandragodinhosilva/usefull_code/blob/main/git_revert.md)
+
+### Data visualization
+[Matplotlib basics](https://github.com/sandragodinhosilva/usefull_code/blob/main/matplotlib.md)
 
 ### Bioinformatics-related
 [SRA - download files](https://github.com/sandragodinhosilva/useful_code/tree/main/bioinformatics/fastq-dump.md)
