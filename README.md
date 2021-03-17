@@ -14,6 +14,7 @@ Some useful code for several programming languages, tools, etc.
 [Weka - basic commands](https://github.com/sandragodinhosilva/usefull_code/blob/main/Weka.md)
 
 ### Git
+[gitignore template)](https://github.com/sandragodinhosilva/usefull_code/blob/main/.gitignore)
 [Revert commit](https://github.com/sandragodinhosilva/usefull_code/blob/main/git_revert.md)
 
 ### Bioinformatics-related
