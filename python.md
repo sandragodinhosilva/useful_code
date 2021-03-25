@@ -1,5 +1,13 @@
 # Python utilities
 
+### Drop columns only with 0's
+```python
+df.loc[:, (df != 0).any(axis=0)]
+```
+### Drop rows only with 0's
+```python
+df.loc[~(df==0).all(axis=1)]
+```
 ### Remove index name
 ```python
 df = df.rename_axis(None, axis = 1)
